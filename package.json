@@ -1,0 +1,56 @@
+{
+  "name": "Myapp",
+  "version": "1.0.0",
+  "description": "This is the jogging app",
+  "main": "app.js",
+  "author": "Diego Hernan Prado Barro",
+  "license": "ISC",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "backbone.localstorage": "~1.1.7",
+    "browserify": "^4.2.0",
+    "connect-flash": "^0.1.1",
+    "express": "~3.5.0",
+    "express-jwt": "~0.2.1",
+    "glob": "^4.0.2",
+    "gulp": "^3.8.8",
+    "handlebars": "^1.3.0",
+    "hbs": "~2.5.0",
+    "hbsfy": "^1.3.2",
+    "jquery": "~2.1.0",
+    "jquery-ui": "~1.10.5",
+    "jsonwebtoken": "~0.4.0",
+    "moment": "^2.7.0",
+    "mongoose": "^3.8.12",
+    "nib": "^1.0.3",
+    "rivets": "^0.6.8",
+    "stylus": "~0.42.3",
+    "underscore": "~1.6.0",
+    "vinyl-source-stream": "^0.1.1",
+    "watchify": "^0.10.2"
+  },
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "gulp": "~3.8.2",
+    "gulp-jscs": "^1.2.0",
+    "gulp-nodemon": "~1.0.2",
+    "gulp-notify": "^2.0.0",
+    "gulp-open": "~0.2.8",
+    "gulp-util": "~2.2.14",
+    "mocha": "~1.18.2",
+    "open": "0.0.5"
+  },
+  "browserify": {
+    "transform": [
+      "hbsfy"
+    ]
+  },
+  "watchify": {
+    "transform": [
+      "hbsfy"
+    ]
+  }
+}

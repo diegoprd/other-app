@@ -1,0 +1,28 @@
+<h2> Your Weekly Report</h2>
+
+<form class="js-report-form filters-form" action="api/times/report" method="get">
+  <input type="text" value="" name="week" placeholder="any day of the week"/>
+  <input class="button" type="submit" value="Report"/>
+</form>
+
+<div class="report">
+
+  {{#if error}}
+  <div>{{error}}</div>
+  {{/if}}
+  
+  <div class="js-speed-report">
+    <h3>Speed</h3>
+    {{#if weeklySpeed}}
+      <div>{{weeklySpeed}} Km/m</div>
+    {{/if}}
+
+  </div>
+
+  <div class="js-distance-report">
+    <h3>Distance</h3>
+    {{#if weeklyDistance}}
+      <div>{{weeklyDistance}} Km</div>
+    {{/if}}
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jogging App - Signup</title>
+
+  <link rel="stylesheet" href="all.css">
+</head>
+<body class="registration">
+
+
+  <form class="signup-form js-signup-form" action="api/signup" method="post">
+    <div class="errors"></div>
+    <h1>Sign up for Jogging Pal</h1>
+    <input type="text" value="" name="fullname" placeholder="Please enter your Full Name"/>
+    <input type="text" value="" name="username" placeholder="Please enter your email here"/>
+    <input type="password" name="password" placeholder="Please enter your password here"/>
+    <input class="button main-action" type="submit" value="Sign up"/>
+    <a class="alternative-action" href="/authenticate">Or sign in if you are already registered.</a>
+  </form>
+
+  <script type="text/javascript" src="/js/registration_bundle.js"></script>
+
+</body>
+</html>
