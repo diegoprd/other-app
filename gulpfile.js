@@ -3,11 +3,7 @@ var nodemon = require('gulp-nodemon');
 var open = require('open');
 var jscs = require('gulp-jscs');
 
-// Expand this gulpfile with the web app one
-require('./webapp/gulpfile');
-
-gulp.task('run-app', ['bundle:registration:watch', 'bundle:app:watch'],
-  function() {
+gulp.task('run-app', function() {
   nodemon({
     script: 'app.js',
     env: {'NODE_ENV': 'development'},

@@ -7,8 +7,8 @@ var app = module.exports = express();
 
 //Initializing API Express
 app.use(expressJwt({
-  secret: 'toptal-jogging',
-  skip: ['/authenticate', '/signup']
+  secret: 'my-ideal-app-prd',
+  skip: ['/signin', '/signup']
 }));
 app.use(express.json());
 app.use(express.urlencoded());
